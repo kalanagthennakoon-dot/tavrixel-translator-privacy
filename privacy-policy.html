@@ -37,7 +37,7 @@ small{color:#93a7c8}
 
 <h2>4. Storage and retention</h2>
 <ul>
-<li>The extension does not save submitted text or translations to its own storage, a database, or a TAVRIXEL server.</li>
+<li>The extension saves only your disclosure-acceptance choice (accepted or not accepted) locally in Chrome storage on your device so you do not need to confirm every time. It does not save submitted text or translations to its own storage, a database, or a TAVRIXEL server.</li>
 <li>The extension does not maintain a translation history.</li>
 <li>Text remains in the popup fields while the popup is open and is discarded when the popup is closed, subject to normal browser behavior.</li>
 <li>The extension does not control how long Google or its service providers retain or process a translation request. Refer to Google's policies for details about third-party handling.</li>
@@ -47,13 +47,14 @@ small{color:#93a7c8}
 <p>TAVRIXEL does not sell, rent, or independently share submitted text with advertisers or data brokers. The text and language parameters are transmitted to Google because this third-party service is required by the current translation implementation. The extension does not send translation text to any other third-party service.</p>
 
 <h2>6. Permissions and technical data</h2>
-<p>The extension requests host access to <code>https://translate.googleapis.com/*</code> so it can make translation requests. It does not request browsing-history, tabs, identity, or local-storage permissions. The browser and network may process ordinary connection information as part of making an HTTPS request.</p>
+<p>The extension requests the Chrome storage permission to remember your disclosure-acceptance choice locally on your device, and host access to <code>https://translate.googleapis.com/*</code> so it can make translation requests. It does not request browsing-history, tabs, or identity permissions. The browser and network may process ordinary connection information as part of making an HTTPS request.</p>
 
 <h2>7. Security</h2>
 <p>Translation requests are sent using HTTPS. The extension does not operate a TAVRIXEL server that stores submitted text. No method of internet transmission or electronic storage can be guaranteed to be completely secure, and third-party processing is subject to the third party's safeguards and policies.</p>
 
 <h2>8. Your choices and deletion</h2>
 <ul>
+<li>You can untick the disclosure checkbox to withdraw the saved acceptance; the extension will then require you to accept again before translating.</li>
 <li>You can avoid sending text by not using the Translate function.</li>
 <li>You can clear text from the input and output fields using the extension's controls.</li>
 <li>You can close the popup to clear its in-memory fields.</li>
@@ -68,7 +69,7 @@ small{color:#93a7c8}
 
 <h2>11. Contact</h2>
 <p>For questions or privacy requests about TAVRIXEL Translator, contact the developer:</p>
-<p><strong>Developer / Privacy contact:</strong> [kalanagthennakoon@gmail.com]</p>
+<p><strong>Developer / Privacy contact:</strong> [REPLACE WITH A MONITORED CONTACT EMAIL ADDRESS]</p>
 
 <div class="note"><strong>Before publishing:</strong> Replace the contact placeholder with an email address you monitor. Publish this page at a stable, publicly accessible HTTPS URL, then enter that exact URL in the Chrome Web Store Developer Dashboard. Ensure the Chrome Web Store privacy disclosures match the actual behavior described here.</div>
 <small>Last updated: 8 November 2026</small>
